@@ -264,7 +264,6 @@ class Card {
         >
           ${body}
         </g>
-      </svg>
       <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
       </script>
@@ -273,6 +272,7 @@ class Card {
         window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
       </script>
       <script defer src="/_vercel/speed-insights/script.js"></script>
+      </svg>
     `;
   }
 }
