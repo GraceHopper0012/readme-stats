@@ -1,6 +1,4 @@
 import { encodeHTML, flexLayout } from "./utils.js";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
 
 class Card {
   /**
@@ -264,9 +262,11 @@ class Card {
             this.hideTitle ? this.paddingX : this.paddingY + 20
           })"
         >
+        <script>
+          window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        </script>
+        <script defer src="/_vercel/insights/script.js"></script>
           ${body}
-          <SpeedInsights />
-          <Analytics />
         </g>
       </svg>
     `;
