@@ -264,14 +264,14 @@ class Card {
         >
           ${body}
         </g>
-      <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-      </script>
-      <script defer="true" src="/_vercel/insights/script.js"></script>
-      <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-      </script>
-      <script defer="true" src="/_vercel/speed-insights/script.js"></script>
+        <xhtml:script xmlns:xhtml="http://www.w3.org/1999/xhtml" type="application/javascript">
+          window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        </xhtml:script>
+        <xhtml:script defer="defer" xmlns:xhtml= "http://www.w3.org/1999/xhtml" type="application/javascript" src="/_vercel/insights/script.js"/>
+        <xhtml:script xmlns:xhtml="http://www.w3.org/1999/xhtml" type="application/javascript">
+          window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+        </xhtml:script>
+        <xhtml:script defer="defer" src="/_vercel/speed-insights/script.js" type="application/javascript" xmlns:xhtml= "https://www.w3.org/1999/xhtml"/>
       </svg>
     `;
   }
