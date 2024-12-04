@@ -1,4 +1,6 @@
 import { encodeHTML, flexLayout } from "./utils.js";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 class Card {
   /**
@@ -263,6 +265,8 @@ class Card {
           })"
         >
           ${body}
+          <SpeedInsights />
+          <Analytics />
         </g>
       </svg>
     `;
